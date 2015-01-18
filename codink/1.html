@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<title>Wanna Hit Me?</title>
+	<link rel="stylesheet" type="text/css" href="2.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type='text/javascript' src='3.js'></script>
+	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+<style type="text/css">
+#health{
+	width: 400px;
+	height: 20px;
+	margin-left: 57px;
+
+
+
+}
+
+progress {
+width: 400px;
+height: 25px;
+display: block;
+/* Important Thing */
+-webkit-appearance: none;
+border: none;
+}
+/* All good till now. Now we'll style the background */
+progress::-webkit-progress-bar {
+background:#DDDDDD;
+border-radius: 20px;
+padding: 2px;	
+}
+
+/* Now the value part */
+progress::-webkit-progress-value {
+border-radius: 10px;
+background-color:#cedc98;
+}
+
+</style>
+</head>
+
+
+<body>
+
+	<div class="All">
+		<div><h1><strong>WANNA HIT ME?</strong></h1></div>
+		<div id='hp'></div>
+		<div><progress id="health" value="100" max="100"></progress></div> 
+        <div class='start' id='jh'></div>
+        <div id='clickstart'><h3>Click to START</h3></div>
+        <div><h2 id='re'></h2></div>
+        <div><p>Instructions: Use RIGHT/LEFT Keys to Fight</p></div>
+    </div>
+    
+</body>
+
+</html>

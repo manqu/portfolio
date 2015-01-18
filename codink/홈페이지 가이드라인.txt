@@ -1,0 +1,20 @@
+홈페이지 참조(골격만)
+http://ironsummitmedia.github.io/startbootstrap-freelancer/
+
+<head>
+<head>
+
+<body>
+<nav></nav>       ->재효
+<header><header>    ->재효
+<section>팀 소개</section>   ->지윤
+<section>팀원 소개</section>  -> 민아
+<section>게임</section>  -> 재윤
+<section> 자유</section> -> 정현
+<footer></footer>  ->재효
+</body>
+
+색깔 : 빨강, 흰색, 검정 만 쓰기
+효과는 주제에 맞춰서 자유  (부트스트랩 자유롭게 연습하기 위해 자기가 원하는 만큼 효과 넣기)
+컨셉: 거스코딩크 (guess codingk)
+글자쓸때는 타이틀, 메뉴같은 것, 로고같은 것은 영어로쓰기 ( 내용은 한글로 써도 됨)

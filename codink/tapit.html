@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <style>
+button {
+width: 100px;
+height:100px;
+display: block;
+/* Important Thing */
+-webkit-appearance: none;
+border: none;
+}
+/* All good till now. Now we'll style the background */
+button::-webkit-button-bar {
+background:red;
+border-radius: 20px;
+padding: 2px; 
+}
+/* Now the value part */
+button::-webkit-button-value {
+border-radius: 10px;
+background-color:red;
+}
+
+  </style>
+
+
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Simple Collapsible</h2>
+      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"><img src="C:\codink\jiyoon.png" /></button>
+      <div id="demo" class="collapse">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+     
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

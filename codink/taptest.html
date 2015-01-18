@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test</title>
+
+  
+  <!--bootstrap-->
+  <script src="./bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./bootstrap.min.css" type="text/css" rel="stylesheet">
+
+  <script type="text/javascript"> $(document).ready(function(){ $(".popover-top").popover({trigger: 'hover click','placement': 'top'}); }); </script>
+
+  <!--jQuery-->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type='text/javascript' src='taptest.js'></script>
+  <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="accordion" id="accordion2">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+        숨김 가능한 그룹 항목 #1
+      </a>
+    </div>
+    <div id="collapseOne" class="accordion-body collapse in">
+      <div class="accordion-inner">
+        종래 경영관리...
+      </div>
+    </div>
+  </div>
+</body>
+
+  </html>

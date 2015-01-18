@@ -1,0 +1,164 @@
+#about{
+	font-family: Montserrat,"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+	display:block;	
+
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: white;
+	
+	text-align: center;
+	text-decoration: black; 
+	padding-bottom: 50px;
+}
+
+
+#member{
+	width: 100%;
+	background-color: red;
+	padding: 10px;
+	position: relative;
+	
+	text-align: center;
+	display: inline-block;
+
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+hr.star-primary {
+	content: "\\f005";
+	margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+    border-color: white;
+}
+
+
+#jiyoonImg{
+
+    margin-top: 15px;
+	width: 120px;
+	height: 120px; 
+	text-align: center;
+}
+
+#jaehyoImg{
+
+    margin-top: 15px;
+	width: 120px;
+	height: 120px; 
+	text-align: center;
+}
+
+#jeonghyeonImg{
+
+    margin-top: 15px;
+	width: 120px;
+	height: 120px; 
+	text-align: center;
+}
+
+#jaeyoonImg{
+
+    margin-top: 15px;
+	width: 120px;
+	height: 120px; 
+	text-align: center;
+}
+
+#minahImg{
+
+    margin-top: 15px;
+	width: 120px;
+	height: 120px; 
+	text-align: center;
+}
+
+p{
+	padding-top: 5px;
+}
+
+.panel-group{
+	width: 100%;
+	padding-bottom: 80px;
+	background-color: red;
+	display: inline-block;
+}
+
+
+
+.panel{
+	
+	width: 200px;
+	height: 190px;
+
+	border: none;
+	margin:10px;
+    display:inline-block;
+    position: relative;	
+	
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;  
+	
+	text-align:center;
+}
+
+.panel-body{
+	background-color: white;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;   
+	
+	text-align: center;
+	display: block;
+	font-style: black;
+	font-family: "나눔고딕";
+}
+
+#img1{
+	margin-top: 20px;
+	width: 30%;
+	text-align: center;
+
+}
+
+#img2{
+	margin-top: 20px;
+	width: 30%;
+	text-align: center;
+}
+
+#img3{
+	margin-top: 20px;
+	width: 30%;
+	text-align: center;
+}
+
+.body3{
+	display: block;
+
+}
+
+#img4{
+	margin-top: 20px;
+	width: 30%;
+	text-align: center;
+}
+
+#img5{
+	margin-top: 20px;
+	width: 30%;
+	text-align: center;
+}
+
+
+.game{
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
