@@ -1,0 +1,61 @@
+.humidifiers {
+    overflow: hidden;
+}
+
+.humidifier {
+    float: left;
+    width: 70px;
+    height: 140px;
+    margin: 50px;
+    border: 1px solid black;
+}
+
+.waterbox {
+    height: 100px;
+    border-bottom: 1px solid black;
+    background-color: skyblue;
+}
+
+.air {
+    height: 50px;
+    background-color: white;
+}
+
+.controlbox {
+    height: 39px;
+    background-color: #999;
+}
+
+.refill {
+    float: left;
+    margin-top: 13px;
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #00f;
+    cursor: pointer;
+}
+
+.delete {
+    float: left;
+    margin-top: 13px;
+    margin-left: 11px;
+    width: 10px;
+    height: 10px;
+    background-color: #f00;
+    cursor: pointer;
+}
+
+.power {
+    float: left;
+    margin-top: 13px;
+    margin-left: 11px;
+    width: 10px;
+    height: 10px;
+    background-color: #070;
+    cursor: pointer;
+}
+
+.power.on {
+    background-color: #0f0;
+}
