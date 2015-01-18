@@ -1,0 +1,381 @@
+진도
+
+******2014-12-23********
+(설치 세팅)
+
+1. aws 회원가입 (1년까지만 무료/ 그 이후 해제 시키기)
+2. putty, puttygen 설치
+
+- 아마존 들어가서
+1. running instance 클릭
+
+- 아마존은 sftp 21포트를 사용한다
+-puttygen을 통해 아마존 key를 실행한다
+- load로 key 를 열고나서  save private key    (이유: 아마존은 ppk 파일 밖에 사용을 안하기 때문에 변환) => 공인인증서 같은 역할
+-public ip => 아마존이 우리한테 준 ip
+-putty 킨 다음에 auth 눌리기 -> session  -> jahoy 클릭
+-> putty 들어와서 ubuntu  라고 치면 접속됨!!
+
+-----------------------------
+
+리눅스 기본적인 명령어
+cd      //   cd ..
+sudo   -> 관리자 권한 (root)의 권한을 얻음
+ls
+top
+mv 
+rm
+mkdir
+vi
+ps,kill,
+
+----------------------------------
+vi 나가는 방법   -> :q
+vi 사용법 -> i  눌리면 insert 글을 쓸수 있음
+esc 눌린후 :wq    -> 저장하고 끄기 
+
+------------------------------------
+cd 눌리고 tap 눌리면 자동 완성
+sudo mkdir jahoy     => jahoy 디렉토리 만들기
+sudo vi test   -> test 파일 만들기 
+tail test    -> 실행시키기
+
+
+q 를 눌리면 나가짐
+:q!  -> 강제종료
+var  -> log를 기록할 장소
+ls -l   -> ls를 더 자세하게 root까지 볼 수 있게 
+ -------------------------------------
+서버세팅
+
+sudo apt-get update -> 업데이트
+sudo apt-get install postgresql postresql-server-dev-all       => 데이터 베이스 설치
+sudo apt-get cache showpkg (패키지이름)   -> 설치됬는지 확인
+
+
+ctrl+c   -> 오른쪽 마우스    ( 윈도우에 있는거 명령어 복사됨)
+
+크롬 + f12  -> 개발자 도구 열기
+
+부트스트랩 템플릿
+www.bootswatch.com 
+-----------------------------------------------------------------------------------------------------------------
+******2014-12-30********
+
+jquery
+
+after (요소 바로 뒤에//형제로 삽입) 와 append (요소안에 달라붙어서//자식으로 삽입)  의 차이
+
+.addClass()  => class를 만들어라 
+.removeClass()
+.toggleClass()  => class가 없으면 class를 만들고, class 가 있으면 class 를 없애라
+
+
+.html()  => 그냥 바로 덮어버림
+
+css를 따로 만든다음에 css는 class로 작동시킬것 
+
+this  => 바로 앞에 것을 가리킴
+
+
+ASKIICODE 를 통해서 키보드 조작
+
+-------------------------------------------------------------------------------------------
+리눅스
+- 권한에 대해서 
+
+755권한 -> 일반적으로 많이 쓰이는 권한 
+444권한 -> 읽기, 읽기, 읽기
+ls -l -> 권한 보는 방법
+chown -> 권한의 소유주 다른사용자 변환주는 것          
+chmod -> 권한 주는 것
+
+다른 사용자는 읽기 와 실행 권한만 줄것 
+소유자, 그룹, 다른 사용자 
+ex)sudo chmod 755 (폴더이름)
+ex)sudo chown ubuntu:ubuntu (폴더이름)-> 권한을 주면 sudo 안입력해도됨 
+
+
+**flask
+
+flask <- 함수
+
+__name__ <- 고유 명사 변수, 바뀌면 안됨    '__main__'
+ctrl + z  -> 프로그램 강제 종료
+lsof -i  => 프로세스가 다 나옴
+
+if 쓴다음에 꼭 뛰어쓸 것 
+flask 홈페이지 접속법 :  putty 가서 jahoy  load 눌린다음 host name 숫자복사해서 :5000을 붙여서 실행
+
+실행된 서버를 중지하려면, control-C를 누른다
+
+sublime text2  -> ftp 설치하기 
+
+ftp 실행 -> 마우스 오른쪽 클릭-> sftp/ftp -> download folder
+
+
+
+----------------------------------------------------------------------------------
+
+*20150101 채팅 개발기
+
+보통 80번 포트 사용
+개발용포트 22포트
+자바스크립트내에서 페이지의 변동이 없이 background 에서 계속 정보를 주고 받는것 :ajax
+주소가 다른 경우 cross siterequest forgery security // 다음을 입력한다
+
+C:\Program Files (x86)\Google\Chrome\Application\chrome --disable-web-security
+
+
+-랜더링: 보기편하게 정보를 보게하는 것
+
+------------------------------------------------------------------------
+
+*20150101 flask 
+
+MVC패턴 
+view // controllor(조정하는 것)
+
+static 안에 style.css
+templates -> layout.py (정적페이지), home.py(동적페이지),board.py (동적페이지)
+
+{{}}   -> 출력의 의미 
+
+데이터 전달방식 
+get-> url
+
+post-> 보여주는 페이지 외에도 헤더의 string 까지 전달
+
+tempda가  url에서 변수역할
+
+
+------------------------------------------------------------------------------
+*20150106 데이터베이스 공부
+
+-데이터베이스로 할 수있는일
+1.항목 추가
+2.항목 삭제
+3.항목 수정
+4.특정 조건 만족하는 항목 찾기
+5.표만들기, 수정하기, 지우기
+
+-관계형 데이터베이스
+1. 데이터베이스 내에 여러표들이 있고 이들 사이에 관계가 존재
+2. 대부분서버스들은 관계형 데이터 베이스를 사용
+3. 표 = table
+4. 테이블 아래의 각 항목 = 레코드(record)
+5. 테이블의 각 열 = 필드(field)
+
+*기본키(primary key)
+테이블에서 레코드를 식별하는 고유한 필드
+테이블마다 하나씩만 존재!!
+ 
+
+*외부키(foregin key)
+
+ sudo pip install sqlalchemy psycopg2 ipython 설치
+
+실습
+=> 사용자 + 주소록 만들자
+
+
+-세션
+-추가하기
+-검색하기
+
+사용자 목록얻기 
+user_list = session
+.query(User).order_by(User.id)
+
+사용자 목록에서 사용자를 하나씩 얻기
+for user on user_list:
+	print(user)
+
+특정조건을 만족하는 사용자 찾기
+user_filter_list = session.query(User).filter_by(name='dahoon')
+or
+user_firlter_list = session.query(User).filter(User.name == 'dahoon')
+
+이들 중에서 첫번째 사용자 얻기
+filtered_user = user_filter_list.first()
+
+이들 중에서 하나만 얻기 (조건을 만족하는게 여러개 있으면 에러가 발생해요!)
+filtered-user = user_filter_list.one()
+
+filtered_user
+
+자세한 filter, filter_by 사용법은 튜토리얼 참고!!
+
+-------------------------------------------------------------------
+
+상엽이의 미니강의
+
+mvc모델의 이해
+(model(데이터관리)- view(결과를 최종적으로 보여지는것)- control(컨트롤))
+
+mvc의 장점
+->유지보수
+
+--------------------------------------------------------------------
+flask 강의
+
+로그인 만드는 강의
+session -> 변하지 않고 다른데 가서도 남아 있게 하는 것
+action= "/경로"   -> 어떤 경로로 갈것인지 설정 
+
+기본적인 sql문
+1.select
+2.create
+3.drop
+4.alter
+5.insert into
+6.undate
+7,delete
+
+대쉬2개 -> 1
+대쉬갈라지는거 -> 1대 다
+
+sql power architect ->  데이터베이스 쉽게 짜도록 도와주는 툴
+
+sudo -u postgres psql postgres psql => 비밀번호 설정
+
+sudo -u postgres createuser --superuser ubuntu -> role 설정 
+
+
+비밀번호: ubuntu로 지정해놓음
+
+\du  -> 계정 보여주는것 
+
+CREATE DATABASE ubuntu; -> database 만들기
+
+\ㅣ   -> database가 만들어진 것 확인 
+
+varchar(45) -> 총45byte (변동 있는경우)
+                         (변동없는경우  -> 그냥 char)
+
+\d -> database 만들어진 것 보는 것
+
+\d (데이터베이스이름)   -> 그 데이터베이스의 더 자세한 정보 
+
+INSERT INTO jahoy VALUES (233, 'whoa');  -> 데이터베이스에 값을 넣기
+
+여기서 부터는 record문이니까 select문을 사용해야한다.
+
+
+SELECT * FROM jahoy;  -> 데이터베이스 불러오기 
+
+PRIMARY KEY -> 테이블행에 고유성을 제공하는 어떤 열
+FOREGIN KEY -> 식별
+
+
+**power architect사용법
+
+부모 자식관계일때,여기 있는 데이터가 저기 있는 데이터와 관계가 있는가 비식별관계를 써야한다
+
+데이터 베이스 다대다를 만들때 중간에 데이터베이스를 하나 더 만들어야함
+-------------------------------------------------------------------------
+숙명여대 이혜리 선생님 - 크롬웹개발자 도구 강의 
+
+-html파일 하나당 css 파일 하나 만드는 것이 제일 좋다.
+-태그 시작부분과 끝부분에 주석을 쓰기
+-css를 할때 px보다 %로 하는 것이 좋다.
+
+부트스트랩
+gird 시스템이 제일 중요하다
+12칸으로 나누어진다는 것을 이해하고 있어야한다.
+
+.col-md-6 => 중간 크기의 화면에서 6개 column 만큼의 폭을 가지는 div element
+
+<div class= "col-md-6 col-lg-4"> => 중간크기에서는 6개 , 큰화면크기에서는 4개 만큼의 폭
+
+<div class="container">  -> 중앙으로 위치시키겠다 
+
+offset -> 여백주기
+
+visible, hidden 을 통해 보여주고 싶은것과 안보여주고 싶은 것을 설정할 수 있다. 
+
+***pull push -> 모바일 화면 보여주는 순서 정할 때 쓰는 문법 
+
+거의 대부분 md에 적용한다 
+
+col-md-push-(밀고 싶은칸)  col-md-pull-(당기고 싶은 칸)
+
+A-B-C 를 하고 싶으면 B에 push C에 pull
+
+
+ex)  A- B -C -D 에서 B와 D의 순서를 바꾸고 싶을때   
+
+     <div class="col-xs-6 col-sm-6 col-md-3 col-md-push-6">  -> 6칸을 밀고
+			   
+     <div class="col-xs-6 col-sm-6 col-md-3 col-md-pull-6">  -> 6칸 당겨오기
+			   
+			    
+
+
+
+발사믹 목업툴,또는 pencil project을 이용하여 서버개발자와 커뮤니케이션
+
+@font-face{
+	font
+} 
+
+google-font에서 cdn 긁어와서 font  쓰기
+
+
+-------------------------------------------------------------------------------------------
+상엽이 보충강의 
+
+-크로스 브라우징 
+
+-검색엔진 최적화
+
+meta 태그를 이용해 검색엔진 최적화
+
+- css cascading
+-> css 우선순위를 잘 이해할것 
+
+-> 부트스트랩 보다 아래에서 css링크 불러오기
+
+**parsing
+
+-------------------------------------------------------------------------------------------
+**웹서버 돌리기
+
+
+
+sudo apt-get apache2  -> 아파치2 설치
+
+vi jaehyo.wsgi  -> 아파치와 연결되는 메인 파일
+
+
+sudo apt-get install libapache2-mod-wsgi
+sudo service apache2 restart
+
+
+파일안에서 
+-------------------------------
+import sys
+
+sys.path.insert(0, "home/jaehyo/")
+
+from jaehyo import app
+
+application = app
+
+---------------------------------
+
+sudo vi /etc/apache2/sites-enabled/000-default.conf 
+
+파일안에서
+-------------------------------------------
+DocumentROOT 에서  디렉토리 위치 설정 EX) /home/jaehyo
+
+<Directory "/home/jaehyo">
+	Order allow, deny
+	Allow from all
+</Directory>
+WSGIScriptAlias/ /home/jaehyo/jaehyo.wsgi
+
+-----------------------------------------
+
+

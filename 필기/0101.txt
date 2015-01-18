@@ -1,0 +1,29 @@
+
+
+
+
+
+대개 개발용포트 22
+
+
+서버
+-url-함수선택실행-
+     get request
+
+1. ajax?
+브라우저에서 사용하는 동작이랑 같은 동작
+자바스크립트에서 페이지변화없이 원하는 동작 주고받음.
+ex)대화는 계속 돌아가지만 채팅방나가지면 앙댐.
+필요한 정보만 요청하고 필요한 정보만 줄 수 있음.
+예)채팅방에서 프레임은 놔두고 계속 대화만 받을 수 있음
+
+
+
+json?
+
+C:\Program Files\Google\Chrome\Application\chrome --disable-web-security
+
+
+
+
+http://54.64.82.137:5000/?tempda=aa

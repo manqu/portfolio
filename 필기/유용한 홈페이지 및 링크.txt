@@ -1,0 +1,102 @@
+http://getbootstrap.com/
+http://getbootstrapk.com/
+
+http://fortawesome.github.io/Font-Awesome/
+
+
+http://www.bootply.com/
+http://jsfiddle.net/
+
+
+리눅스 명령어 사이트
+http://www.mireene.com/webimg/linux_tip1.htm
+
+
+부트스트랩 테마 무료템플릿
+http://startbootstrap.com/
+
+무료 부트스트렙 테마 모음사이트
+http://www.cmsfactory.net/node/10674
+
+
+
+linter?
+fisrt bug on computer?
+
+
+프로그래밍 공부하는 인문계 대학생에게 
+http://www.zdnet.co.kr/column/column_view.asp?artice_id=20150102090153&type=xml
+
+
+[jQuery]AJAX가 무엇인지 알아보자
+http://blog.naver.com/sbd38/220133010153
+
+[파이썬 강의]
+http://www.slideshare.net/blissray/w-part-2?from_m_app=android
+
+https://wikidocs.net/6
+
+
+-재효링크
+http://xguru.net/1897
+
+http://code.demunskin.com/md/nolboo/wiki.html
+
+-beautifulsoup
+https://blog.ansuchan.com/article-result-parser-using-beautifulsoup/
+
+
+
+http://www.color-hex.com/color-palettes/
+
+
+http://todomvc.com/
+
+
+http://orteil.dashnet.org/cookieclicker/
+
+http://backbonejs.org/#View
+
+
+http://stackoverflow.com/
+
+
+
+[프로그래밍언어정리]
+http://pds27.egloos.com/pds/201501/06/18/a0105618_54abd9c65cb3e.png
+
+
+발사믹목업
+http://balsamiq.com/products/mockups/
+펜슬프로젝트
+http://pencil.evolus.vn/Features.html
+
+
+
+http://www.w3schools.com/
+
+
+Markup Validation Service
+http://validator.w3.org/check?uri=www.google.com&charset=%28detect+automatically%29&doctype=Inline&group=0
+
+그리드시스템-부트스트랩
+http://martian36.tistory.com/1264
+
+
+http://msdn.microsoft.com/student-developer-program
+
+[Beautifulsoup]
+http://edoli.tistory.com/entry/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9B%B9-%ED%8C%8C%EC%8B%B1-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-Beautiful-Soup
+
+[try git]
+https://try.github.io/levels/1/challenges/1
+
+[become a git guru]
+https://www.atlassian.com/git/tutorials/
+
+[Emmet]
+http://huntter0258.blog.me/220159947074
+
+
+[sourcetree]
+http://www.sourcetreeapp.com/download/
