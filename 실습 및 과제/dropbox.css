@@ -1,0 +1,40 @@
+.Table{
+
+}
+
+.first{
+
+	width: 100%;
+	border: 1px solid blue;
+	background-color: skyblue;
+	padding: 50px;
+}
+
+#logolink{
+	text-align: left;
+}
+
+#chat{
+	text-align: right;
+}
+
+.sidemenu{
+
+	text-align: left;
+}
+
+td{
+	text-align: center;
+	
+}
+
+.second{
+
+	width: 100%;
+	border: 1px solid black;
+}
+
+#h2{
+	
+
+}

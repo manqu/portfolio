@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style type="text/css">
+
+#health{
+	width: 400px;
+	height: 25px;
+}
+
+progress {
+	width: 400px;
+	height: 25px;
+	display: block;
+	/* Important Thing */
+	-webkit-appearance: none;
+	border: none;
+}
+/* All good till now. Now we'll style the background */
+progress::-webkit-progress-bar {
+	background:#DDDDDD;
+	border-radius: 20px;
+	padding: 2px;	
+}
+
+/* Now the value part */
+progress::-webkit-progress-value {
+	border-radius: 10px;
+	background-color:#cedc98;
+} 
+
+
+</style>
+
+<script type="text/javascript">
+
+var health = document.getElementById("health")
+health.keydown(function(key){
+
+health.value = health.value ('-10px');
+
+});
+
+</script>
+</head>
+
+<body>
+<div><progress id="health" value="350" max="400"></progress></div>
+</body>
+
+
+</html>
