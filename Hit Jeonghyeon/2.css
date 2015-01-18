@@ -1,0 +1,67 @@
+.All{
+	display: block;
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -200px;
+	text-align: center;
+}
+
+h1{
+	font-family: cursive;
+}
+
+h3{
+	font-family: cursive;
+}
+
+
+#jh{
+	margin-left: 78px;
+	width: 350px;
+	height: 400px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#re{
+	text-align: center;
+}
+
+.fuckyou {
+	width: 350px;
+	height: 400px;
+	background-image: url('fuckyou.png');
+}
+
+.mocking {
+	width: 350px;
+	height: 400px;
+	background-image: url('mocking.png');
+}
+
+.left {
+	width: 350px;
+	height: 400px;
+	background-image: url("1.png");
+}
+
+.right {
+	width: 350px;
+	height: 400px;
+	background-image: url("2.png");
+}
+
+.lose {
+	width: 350px;
+	height: 400px;
+	background-image: url('lose.png');
+}
+
+#hp {
+	color:green;
+}
