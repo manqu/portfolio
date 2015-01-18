@@ -1,0 +1,28 @@
+{%extends 'layout.html'%}
+{%block body%}
+
+	<img src="/static/img5.png"  style="width:100px; height=100px " />
+
+	<form action="/login" method="POST" >
+		<input type="text" name="user_id" />
+		<input type="password" name="password" />
+		<button type="submit">login</button>
+	</form>
+
+	
+	<br>
+	{% for i in listda %}
+	<li class={{byonsuda}} id={{i}}>{{byonsuda*5}}<span> </span>{{i}}<br></li>
+	{% endfor %}
+	<br>
+	{{soup.find('span', 'blind').text}}
+	      
+	      {% for i in music%}		
+   		<ol>
+      		{% for a in i.find_all('span','ellipsis')%}
+        				 <li>{{a.text}} </li>
+      		{% endfor %}   
+   		</ol>
+      		{% endfor %}
+
+{% endblock%}

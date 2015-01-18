@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h2>Venture Square</h2>
+
+{% for i in soup3.find_all('img') %}
+<img src={{i['src']}}></img>
+{% endfor %}
+
+
+{% for i in src %}
+{{i}}
+{% endfor %}
+
+
+<ul>
+{% for i in soup3.find_all('h2') %}
+{% for b in i.find_all('a')%}
+<li> <a href={{b['href']}}>{{b.text}}</a></li>
+{% endfor %}
+{% endfor %}
+</ul>
+</body>
+</html>

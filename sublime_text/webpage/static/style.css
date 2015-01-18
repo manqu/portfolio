@@ -1,0 +1,189 @@
+/*MINAH*/
+
+.minah_header{
+	font-family: Helvetica;
+	
+}
+.header_section1{
+	background-color: #00ba58;
+	text-align: center;
+	padding: 60px;
+	width: 100%;
+
+}
+
+.row{
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;  
+
+}
+
+#title{
+	text-align: center;
+	color: white;
+	font-size: 1400%;
+
+
+}
+#title_1{
+	text-align: center;
+	color: white;
+	font-size: 500%;
+}
+
+.header_section2{
+
+
+}
+
+.introduce_minah{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #ff0033;
+	 
+}
+
+#minah_name{
+
+	text-align: right;
+	padding-right: 50px;
+	
+}
+
+
+#minah_intro{
+	padding-top: 70px;
+}
+
+img{
+	width: 80%;
+	margin-top: 30px; 
+}
+
+/* 작은 기기들 (태블릿, 768px 이상) */
+@media (min-width: 786px).col-sm-12 {
+ }
+.col-xs-12 col-sm-6 col-md-4{
+} 
+/* 중간 기기들 (데스크탑, 992px 이상) */
+@media (min-width: @screen-md-min) { }
+ 
+/* 큰 기기들 (큰 데스크탑, 1200px 이상) */
+@media (min-width: @screen-lg-min) {  }
+
+.minah_2014{
+	padding: 100px;
+	text-align: center;
+}
+
+.minah_2012{
+	padding: 100px;
+	text-align: center;
+}
+
+.minah_2011{
+	padding: 100px;
+	text-align: center;
+}
+
+.minah_2010{
+	text-align: center;
+	padding: 100px;
+}
+
+.close-modal{
+	padding: 50px;
+
+
+}
+.modal-body{
+	text-align: center;
+	color: black;
+
+}
+
+.modal-footer{
+	text-align: center;
+
+}
+
+#close{
+	text-align: center;
+	
+}
+
+#parsing{
+	margin: 20px;
+
+}
+
+.minah_footer{
+	font-family: Helvetica;
+	text-align: left;	
+	background-color: #ff3300;
+	color: white;
+	
+}
+
+#minah_contact{
+	font-size: 70px;	
+}
+
+#minah_mail{
+	font-size: 15px;
+}
+
+#minah_copyright{
+	font-size: 15px;
+}
+
+
+/*JIYOON*/
+
+
+.jiyoon{
+font-family:'맑은 고딕';
+background-repeat:no-repeat;
+background-size:100%;
+}
+
+
+div.a{
+border:1px solid #ffc000;
+width:120px;
+height:120px;
+position:absolute;
+background-image: linear-gradient(to bottom,#fdfdc9 0,#f6f5b6 100%);
+text-align:center;
+line-height:120px;
+margin:auto;
+
+}
+
+
+#text{
+   text-align:center;
+   margin:auto;
+   line-height:250%;
+}
+
+
+#carousel-example-generic{
+margin:auto;
+
+}
+
+
+
+#footer, h1{
+   text-align:center;
+   margin:auto;
+   }
+
+
+
+/*JEONGHYEON*/
+.item slide{
+	margin : auto;
+}

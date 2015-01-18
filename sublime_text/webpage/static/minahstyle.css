@@ -1,0 +1,97 @@
+
+
+.minah_header{
+	font-family: Helvetica;
+	width: 100%;
+	height: auto;
+}
+
+#minah_title{
+
+	background-color: #00ba58;
+	text-align: center;
+	padding: 100px;
+	color: white;
+	font-size: 200px;
+}
+
+.introduce_minah{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #ff0033;
+	 
+}
+
+#minah_name{
+
+	text-align: right;
+	padding-right: 50px;
+	
+}
+
+
+#minah_intro{
+	padding-top: 70px;
+}
+
+
+.minah_2014{
+	padding: 100px;
+	text-align: center;
+}
+
+.minah_2012{
+	padding: 100px;
+	text-align: center;
+}
+
+.minah_2011{
+	padding: 100px;
+	text-align: center;
+}
+
+.minah_2010{
+	text-align: center;
+	padding: 100px;
+}
+
+.close-modal{
+	padding: 50px;
+
+
+}
+.modal-body{
+	text-align: center;
+	color: black;
+
+}
+
+.modal-footer{
+	text-align: center;
+
+}
+
+#close{
+	text-align: center;
+	
+}
+
+.minah_footer{
+	font-family: Helvetica;
+	text-align: left;	
+	background-color: #ff3300;
+	color: white;
+	
+}
+
+#minah_contact{
+	font-size: 70px;	
+}
+
+#minah_mail{
+	font-size: 15px;
+}
+
+#minah_copyright{
+	font-size: 15px;
+}

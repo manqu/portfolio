@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+	<script type='text/javascript'>
+$(document).ready(function() {
+	$('body').append('<embed src="{{ url_for('static', filename='bgm2.swf') }}" autostart="true" hidden="true" loop="false">');
+    $(document).keydown(function(key) {
+        switch(parseInt(key.which,10)) {
+			// Left arrow key pressed
+			case 37:
+			var ll1=Number($('#char').css('left').split("px")[0]);
+			if(ll1>45){
+				$('#char').animate({left: "-=10px"}, 20);
+			}
+			else{}
+			break;
+			
+			
+			// Up Arrow Pressed
+			case 38:
+			var tt1=Number($('#char').css('top').split("px")[0]);
+			if(tt1>Number($('#e1').css('top').split("px")[0])){
+				$('#char').animate({top: "-=10px"}, 20);
+			}
+			else{}
+			break;
+			
+			// Right Arrow Pressed
+			case 39:
+			var ll1=Number($('#char').css('left').split("px")[0]);
+			if(ll1<1265){
+				$('#char').animate({left: "+=10px"}, 20);
+			}
+			else{}
+			break;
+			
+			// Down Arrow Pressed
+			case 40:
+			var tt1=Number($('#char').css('top').split("px")[0]);
+			if(tt1<Number($('#e2').css('top').split("px")[0])){
+				$('#char').animate({top: "+=10px"}, 20);
+			}
+			else{}
+			break;
+		}
+	});
+    var x1=0;
+    var interval1 = setInterval(function(){
+    	x1=Math.floor(Math.random()*4+1);
+				if(x1==1){
+                	$('#e1').removeClass('east');
+					$('#e1').removeClass('south');
+					$('#e1').removeClass('west');
+					$('#e1').addClass('north');
+					
+				}
+
+				else if(x1==2){
+                	$('#e1').removeClass('north');
+					$('#e1').removeClass('south');
+					$('#e1').removeClass('west');
+					$('#e1').addClass('east');
+					
+				}
+
+				else if(x1==3){
+                	$('#e1').removeClass('north');
+					$('#e1').removeClass('east');
+					$('#e1').removeClass('west');
+					$('#e1').addClass('south');
+				}
+
+				else if (x1==4){
+					$('#e1').removeClass('north');
+					$('#e1').removeClass('east');
+					$('#e1').removeClass('south');
+					$('#e1').addClass('west');
+				}
+	},500);
+
+    var x2=0;
+    var interval2 = setInterval(function(){
+    	x2=Math.floor(Math.random()*4+1);
+				if(x2==1){
+                	$('#e2').removeClass('east');
+					$('#e2').removeClass('south');
+					$('#e2').removeClass('west');
+					$('#e2').addClass('north');
+					
+				}
+
+				else if(x2==2){
+                	$('#e2').removeClass('north');
+					$('#e2').removeClass('south');
+					$('#e2').removeClass('west');
+					$('#e2').addClass('east');
+					
+				}
+
+				else if(x2==3){
+                	$('#e2').removeClass('north');
+					$('#e2').removeClass('east');
+					$('#e2').removeClass('west');
+					$('#e2').addClass('south');
+				}
+
+				else if (x2==4){
+					$('#e2').removeClass('north');
+					$('#e2').removeClass('east');
+					$('#e2').removeClass('south');
+					$('#e2').addClass('west');
+				}
+	},500);
+
+	var x3=0;
+    var interval3 = setInterval(function(){
+    	x3=Math.floor(Math.random()*4+1);
+				if(x3==1){
+                	$('#e3').removeClass('east');
+					$('#e3').removeClass('south');
+					$('#e3').removeClass('west');
+					$('#e3').addClass('north');
+					
+				}
+
+				else if(x3==2){
+                	$('#e3').removeClass('north');
+					$('#e3').removeClass('south');
+					$('#e3').removeClass('west');
+					$('#e3').addClass('east');
+					
+				}
+
+				else if(x3==3){
+                	$('#e3').removeClass('north');
+					$('#e3').removeClass('east');
+					$('#e3').removeClass('west');
+					$('#e3').addClass('south');
+				}
+
+				else if (x3==4){
+					$('#e3').removeClass('north');
+					$('#e3').removeClass('east');
+					$('#e3').removeClass('south');
+					$('#e3').addClass('west');
+				}
+	},500);
+
+	var x4=0;
+    var interval4 = setInterval(function(){
+    	x4=Math.floor(Math.random()*4+1);
+				if(x4==1){
+                	$('#e4').removeClass('east');
+					$('#e4').removeClass('south');
+					$('#e4').removeClass('west');
+					$('#e4').addClass('north');
+					
+				}
+
+				else if(x4==2){
+                	$('#e4').removeClass('north');
+					$('#e4').removeClass('south');
+					$('#e4').removeClass('west');
+					$('#e4').addClass('east');
+					
+				}
+
+				else if(x4==3){
+                	$('#e4').removeClass('north');
+					$('#e4').removeClass('east');
+					$('#e4').removeClass('west');
+					$('#e4').addClass('south');
+				}
+
+				else if (x4==4){
+					$('#e4').removeClass('north');
+					$('#e4').removeClass('east');
+					$('#e4').removeClass('south');
+					$('#e4').addClass('west');
+				}
+	},500);
+
+    var x5=0;
+    var interval5 = setInterval(function(){
+    	x5=Math.floor(Math.random()*4+1);
+				if(x5==1){
+                	$('#e5').removeClass('east');
+					$('#e5').removeClass('south');
+					$('#e5').removeClass('west');
+					$('#e5').addClass('north');
+					
+				}
+
+				else if(x5==2){
+                	$('#e5').removeClass('north');
+					$('#e5').removeClass('south');
+					$('#e5').removeClass('west');
+					$('#e5').addClass('east');
+					
+				}
+
+				else if(x5==3){
+                	$('#e5').removeClass('north');
+					$('#e5').removeClass('east');
+					$('#e5').removeClass('west');
+					$('#e5').addClass('south');
+				}
+
+				else if (x5==4){
+					$('#e5').removeClass('north');
+					$('#e5').removeClass('east');
+					$('#e5').removeClass('south');
+					$('#e5').addClass('west');
+				}
+	},500);
+
+	var x6=0;
+    var interval6 = setInterval(function(){
+    	x6=Math.floor(Math.random()*4+1);
+				if(x6==1){
+                	$('#e6').removeClass('east');
+					$('#e6').removeClass('south');
+					$('#e6').removeClass('west');
+					$('#e6').addClass('north');
+					
+				}
+
+				else if(x6==2){
+                	$('#e6').removeClass('north');
+					$('#e6').removeClass('south');
+					$('#e6').removeClass('west');
+					$('#e6').addClass('east');
+					
+				}
+
+				else if(x6==3){
+                	$('#e6').removeClass('north');
+					$('#e6').removeClass('east');
+					$('#e6').removeClass('west');
+					$('#e6').addClass('south');
+				}
+
+				else if (x6==4){
+					$('#e6').removeClass('north');
+					$('#e6').removeClass('east');
+					$('#e6').removeClass('south');
+					$('#e6').addClass('west');
+				}
+	},500);
+
+	var x7=0;
+    var interval7 = setInterval(function(){
+    	x7=Math.floor(Math.random()*4+1);
+				if(x7==1){
+                	$('#e7').removeClass('east');
+					$('#e7').removeClass('south');
+					$('#e7').removeClass('west');
+					$('#e7').addClass('north');
+					
+				}
+
+				else if(x7==2){
+                	$('#e7').removeClass('north');
+					$('#e7').removeClass('south');
+					$('#e7').removeClass('west');
+					$('#e7').addClass('east');
+					
+				}
+
+				else if(x7==3){
+                	$('#e7').removeClass('north');
+					$('#e7').removeClass('east');
+					$('#e7').removeClass('west');
+					$('#e7').addClass('south');
+				}
+
+				else if (x7==4){
+					$('#e7').removeClass('north');
+					$('#e7').removeClass('east');
+					$('#e7').removeClass('south');
+					$('#e7').addClass('west');
+				}
+	},500);
+
+	var x8=0;
+    var interval8 = setInterval(function(){
+    	x8=Math.floor(Math.random()*4+1);
+				if(x8==1){
+                	$('#e8').removeClass('east');
+					$('#e8').removeClass('south');
+					$('#e8').removeClass('west');
+					$('#e8').addClass('north');
+					
+				}
+
+				else if(x8==2){
+                	$('#e8').removeClass('north');
+					$('#e8').removeClass('south');
+					$('#e8').removeClass('west');
+					$('#e8').addClass('east');
+					
+				}
+
+				else if(x8==3){
+                	$('#e8').removeClass('north');
+					$('#e8').removeClass('east');
+					$('#e8').removeClass('west');
+					$('#e8').addClass('south');
+				}
+
+				else if (x8==4){
+					$('#e8').removeClass('north');
+					$('#e8').removeClass('east');
+					$('#e8').removeClass('south');
+					$('#e8').addClass('west');
+				}
+	},500);
+
+	var e1_left = Number($('#e1').css('left').split("px")[0]);
+	var e1_top = Number($('#e1').css('top').split("px")[0]);
+    var app_interval1 = setInterval(function(){
+    	l1=Number($('#char').css('left').split("px")[0]);
+    	t1=Number($('#char').css('top').split("px")[0]);
+    	if (x1==1){
+    		if((e1_left-15)<=l1 && l1<=(e1_left+5) && t1<=(e1_top-25)){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    		}
+    		else{}
+    	}
+    	else if (x1==2){
+    		if((e1_top-25)<=t1 && t1<=(e1_top+5) &&(e1_left+5)<=l1){
+    			$('#char').toggle( "explode" );
+                $('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');    			
+                clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else if (x1==4){
+    		if((e1_top-25)<=t1 && t1<=(e1_top+5) && l1<=(e1_left-25)){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else if (x1==3){
+    		if((e1_left-15)<=l1 && l1<=(e1_left+5) && (e1_top+5)<=t1){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else{}
+    },50);
+
+    var e2_left = Number($('#e2').css('left').split("px")[0]);
+	var e2_top = Number($('#e2').css('top').split("px")[0]);
+    var app_interval2 = setInterval(function(){
+    	l1=Number($('#char').css('left').split("px")[0]);
+    	t1=Number($('#char').css('top').split("px")[0]);
+    	if (x2==1){
+    		if((e2_left-15)<=l1 && l1<=(e2_left+5) && t1<=(e2_top-25)){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    		}
+    		else{}
+    	}
+    	else if (x2==2){
+    		if((e2_top-25)<=t1 && t1<=(e2_top+5) &&(e2_left+5)<=l1){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else if (x2==4){
+    		if((e2_top-25)<=t1 && t1<=(e2_top+5) && l1<=(e2_left-25)){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else if (x2==3){
+    		if((e2_left-15)<=l1 && l1<=(e2_left+5) && (e2_top+5)<=t1){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else{}
+    },50);
+
+	var e3_left = Number($('#e3').css('left').split("px")[0]);
+	var e3_top = Number($('#e3').css('top').split("px")[0]);
+    var app_interval3 = setInterval(function(){
+    	l1=Number($('#char').css('left').split("px")[0]);
+    	t1=Number($('#char').css('top').split("px")[0]);
+    	if (x3==1){
+    		if((e3_left-15)<=l1 && l1<=(e3_left+5) && t1<=(e3_top-25)){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    		}
+    		else{}
+    	}
+    	else if (x3==2){
+    		if((e3_top-25)<=t1 && t1<=(e3_top+5) &&(e3_left+5)<=l1){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else if (x3==4){
+    		if((e3_top-25)<=t1 && t1<=(e3_top+5) && l1<=(e3_left-25)){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else if (x3==3){
+    		if((e3_left-15)<=l1 && l1<=(e3_left+5) && (e3_top+5)<=t1){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else{}
+    },50);
+
+    var e4_left = Number($('#e4').css('left').split("px")[0]);
+	var e4_top = Number($('#e4').css('top').split("px")[0]);
+    var app_interval4 = setInterval(function(){
+    	l1=Number($('#char').css('left').split("px")[0]);
+    	t1=Number($('#char').css('top').split("px")[0]);
+    	if (x4==1){
+    		if((e4_left-15)<=l1 && l1<=(e4_left+5) && t1<=(e4_top-25)){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    		}
+    		else{}
+    	}
+    	else if (x4==2){
+    		if((e4_top-25)<=t1 && t1<=(e4_top+5) &&(e4_left+5)<=l1){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else if (x4==4){
+    		if((e4_top-25)<=t1 && t1<=(e4_top+5) && l1<=(e4_left-25)){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else if (x4==3){
+    		if((e4_left-15)<=l1 && l1<=(e4_left+5) && (e4_top+5)<=t1){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else{}
+    },50);
+
+	var e5_left = Number($('#e5').css('left').split("px")[0]);
+	var e5_top = Number($('#e5').css('top').split("px")[0]);
+    var app_interval5 = setInterval(function(){
+    	l1=Number($('#char').css('left').split("px")[0]);
+    	t1=Number($('#char').css('top').split("px")[0]);
+    	if (x5==1){
+    		if((e5_left-15)<=l1 && l1<=(e5_left+5) && t1<=(e5_top-25)){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    		}
+    		else{}
+    	}
+    	else if (x5==2){
+    		if((e5_top-25)<=t1 && t1<=(e5_top+5) &&(e5_left+5)<=l1){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else if (x5==4){
+    		if((e5_top-25)<=t1 && t1<=(e5_top+5) && l1<=(e5_left-25)){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else if (x5==3){
+    		if((e5_left-15)<=l1 && l1<=(e5_left+5) && (e5_top+5)<=t1){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else{}
+    },50);
+
+    var e6_left = Number($('#e6').css('left').split("px")[0]);
+	var e6_top = Number($('#e6').css('top').split("px")[0]);
+    var app_interval6 = setInterval(function(){
+    	l1=Number($('#char').css('left').split("px")[0]);
+    	t1=Number($('#char').css('top').split("px")[0]);
+    	if (x6==1){
+    		if((e6_left-15)<=l1 && l1<=(e6_left+5) && t1<=(e6_top-25)){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    		}
+    		else{}
+    	}
+    	else if (x6==2){
+    		if((e6_top-25)<=t1 && t1<=(e6_top+5) &&(e6_left+5)<=l1){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else if (x6==4){
+    		if((e6_top-25)<=t1 && t1<=(e6_top+5) && l1<=(e6_left-25)){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else if (x6==3){
+    		if((e6_left-15)<=l1 && l1<=(e6_left+5) && (e6_top+5)<=t1){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else{}
+    },50);
+
+    var e7_left = Number($('#e7').css('left').split("px")[0]);
+	var e7_top = Number($('#e7').css('top').split("px")[0]);
+    var app_interval7 = setInterval(function(){
+    	l1=Number($('#char').css('left').split("px")[0]);
+    	t1=Number($('#char').css('top').split("px")[0]);
+    	if (x7==1){
+    		if((e7_left-15)<=l1 && l1<=(e7_left+5) && t1<=(e7_top-25)){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    		}
+    		else{}
+    	}
+    	else if (x7==2){
+    		if((e7_top-25)<=t1 && t1<=(e7_top+5) &&(e7_left+5)<=l1){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else if (x7==4){
+    		if((e7_top-25)<=t1 && t1<=(e7_top+5) && l1<=(e7_left-25)){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else if (x7==3){
+    		if((e7_left-15)<=l1 && l1<=(e7_left+5) && (e7_top+5)<=t1){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else{}
+    },50);
+
+	var e8_left = Number($('#e8').css('left').split("px")[0]);
+	var e8_top = Number($('#e8').css('top').split("px")[0]);
+    var app_interval8 = setInterval(function(){
+    	l1=Number($('#char').css('left').split("px")[0]);
+    	t1=Number($('#char').css('top').split("px")[0]);
+    	if (x8==1){
+    		if((e8_left-15)<=l1 && l1<=(e8_left+5) && t1<=(e8_top-25)){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    		}
+    		else{}
+    	}
+    	else if (x8==2){
+    		if((e8_top-25)<=t1 && t1<=(e8_top+5) &&(e8_left+5)<=l1){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else if (x8==4){
+    		if((e8_top-25)<=t1 && t1<=(e8_top+5) && l1<=(e8_left-25)){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else if (x8==3){
+    		if((e8_left-15)<=l1 && l1<=(e8_left+5) && (e8_top+5)<=t1){
+    			$('#char').toggle( "explode" );
+    			$('body').append('<embed src="{{ url_for('static', filename='die.wav') }}" autostart="true" hidden="true" loop="false">');
+    			clearInterval(app_interval1);
+    			clearInterval(app_interval2);
+    			clearInterval(app_interval3);
+    			clearInterval(app_interval4);
+    			clearInterval(app_interval5);
+    			clearInterval(app_interval6);
+    			clearInterval(app_interval7);
+    			clearInterval(app_interval8);
+    			clearInterval(time_interval);
+    			}
+    		else{}
+    	}
+    	else{}
+    },50);
+
+	var t=0;
+	var time=document.getElementById("time");
+	var goal_left = Number($('#goal').css('left').split("px")[0]);
+	var goal_top = Number($('#goal').css('top').split("px")[0]);
+	var time_interval = setInterval(function(){
+		if ((goal_left-25)<=l1&&l1<=(goal_left+35)&&(goal_top-20)<=t1&&t1<=(goal_top+30)){
+    		time.innerHTML=("Got Cha! Your Record: "+t);
+    		$('body').append('<embed src="{{ url_for('static', filename='success.mp3') }}" autostart="true" hidden="true" loop="false">');
+    		clearInterval(app_interval1);
+    		clearInterval(app_interval2);
+    		clearInterval(app_interval3);
+    		clearInterval(app_interval4);
+    		clearInterval(app_interval5);
+    		clearInterval(app_interval6);
+    		clearInterval(app_interval7);
+    		clearInterval(app_interval8);
+    		clearInterval(time_interval);
+    	}
+
+		else{
+			t=t+1;
+			time.innerHTML=("<h3>당신의 기록: "+t+"초</h3>");
+		}
+	},1000)
+
+});
+	</script>
+
+
+<style>
+#goal{
+	background-color:green;
+	width:65px;
+	height: 65px;
+	position: absolute;
+	left:1200px;
+	top:190px;
+}
+
+#time{
+	position: absolute;
+	top:380px;
+	left:570px;
+}
+#ground {
+	border-style: dashed;
+	border-color: red;
+	width:1250px;
+	height: 300px;
+	left: 4%;
+	top:10%;
+	
+	position:fixed;
+}
+
+#square {
+	border-style: solid;
+	width:400px;
+	height: 400px;
+	margin-top:10%;
+	margin-left:35%;
+}
+
+#char {
+	background-image: url('/static/fuckyou.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width:40px;
+	height: 40px;
+	left:55px;
+	top:190px;
+    position: relative;
+    z-index: 1;
+}
+
+#e1 {
+	left:200px;
+	top:75px;
+	
+	position:fixed;
+}
+#e2 {
+	left:370px;
+	top:333px;
+	
+	position:fixed;
+}
+#e3 {
+	left:470px;
+	top:155px;
+	
+	position:fixed;
+}
+#e4 {
+	left:590px;
+	top:235px;
+	
+	position:fixed;
+}
+#e5 {
+	left:770px;
+	top:75px;
+	position:fixed;
+}
+#e6 {
+	left:930px;
+	top:333px;
+	
+	position:fixed;
+}
+#e7 {
+	left:950px;
+	top:155px;
+	
+	position:fixed;
+}
+#e8 {
+	left:1000px;
+	top:235px;
+	
+	position:fixed;
+}
+
+
+.enemy {
+	width:40px;
+	height: 40px;
+	position: relative;
+    background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.north {
+	background-image: url('/static/north.png');
+}
+
+.east {
+	background-image: url('/static/east.png');
+}
+
+.west {
+	background-image: url('/static/west.png');
+}
+
+.south {
+	background-image: url('/static/south.png');
+}
+</style>
+
+
+
+
+	<title>정현이를 구하라</title>
+</head>
+<body>
+	
+	<div id="char"></div>
+	<div id="e1" class="enemy"></div>
+	<div id="e2" class="enemy"></div>
+	<div id="e3" class="enemy"></div>
+	<div id="e4" class="enemy"></div>
+	<div id="e5" class="enemy"></div>
+	<div id="e6" class="enemy"></div>
+	<div id="e7" class="enemy"></div>
+	<div id="e8" class="enemy"></div>
+	<div id="goal"></div>
+	<div id="time"><h3>당신의 기록: 0초</h3></div>
+</body>
+</html>
